@@ -1,0 +1,277 @@
+@charset 'utf-8';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 16px/1.5 'Roboto', Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #f4f4f4;
+}
+
+/* Global styles */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #fc0366;
+    color: #f4f4f4;
+}
+
+button:hover {
+    background: #f4f4f4;
+    color: #fc0366;
+    border: 1px solid #fc0366;
+    transition: .2s;
+}
+
+input {
+    border: none;
+    outline: none;
+    text-indent: 14px;
+    font-size: 1rem;
+}
+
+.section-heading {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: 14px;
+    color: #fc0366;
+}
+
+.section-heading span {
+    color: #050505; 
+}
+
+.underline {
+    width: 200px;
+    height: 5px;
+    border: none;
+    outline: none;
+    background: #fc0366;
+    margin: 10px auto;
+
+}
+
+/* Header */
+header {
+    background: #050505;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: 3px solid #fc0366;
+    position: relative;
+}
+
+header a {
+    font-family: 'Manjari', 'Roboto', Arial, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #f4f4f4;
+    cursor: pointer;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px;
+}
+
+header li:last-child a {
+    font: 1.5rem/1.5 'Schoolbell';
+    text-transform: capitalize;
+}
+
+header nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding span,
+header .current-page {
+    color: #fc0366;
+    font-weight: bold; 
+}
+
+header a:hover {
+    color: #ccc;
+    transition: .2s;
+    font-weight: bold;
+}
+
+header #search-box {
+    background: #fff;
+    float: right;
+    margin-top: 10px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header #search-box input {
+    width: 0px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 26px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+header #search-box button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #f4f4f4;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+header #search-box button:hover> #search-text {
+    width: 240px;
+}
+
+/* Showcase */
+#showcase {
+    background: url('../images/webdesign-background.jpg') no-repeat -100px -400px;
+    min-height: 500px;
+    text-align: center;
+}
+
+#showcase h1 {
+    margin: 250px 0 10px 0;
+    font-size: 2rem;
+}
+
+#package-showcase h1 {
+    margin: 50px 0 10px 0;
+}
+
+#showcase p,
+#package-showcase p  {
+    font-size: 1.2rem;
+}
+
+#package-showcase h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+#package-showcase h2 em {
+    font-size: 1.2rem;
+    color: #fc0366;
+}
+
+#package-showcase button {
+    margin: 20px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 16px 24px;
+    border-radius: 30px;
+}
+
+#package-showcase #pricing span {
+    font-size: 24px;
+}
+
+/* Newsletter */
+#newsletter {
+    padding: 15px;
+    background:#050505; 
+}
+
+#newsletter h1 {
+    float: left;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+#newsletter form {
+    float: right;
+    margin-top: 10px;
+}
+
+#newsletter input[type = "email"] {
+    padding: 4px;
+    height: 30px;
+    width: 300px;
+    border-radius: 30px 0 0 30px;
+}
+
+#newsletter .button {
+    height: 39px;
+    padding: 0 20px;
+    border-radius: 0 30px 30px 0;
+    font-size: 1rem;
+}
+
+/* Second showcase */
+
+#package-showcase {
+    padding: 30px;
+    background:#050505; 
+    text-align: center;
+    font: 2.5rem/1.5 'Manjari', 'Roboto', Arial, sans-serif;
+}
+
+#package-showcase h1 span {
+    color: #f4f4f4;
+}
+
+/* Boxes */
+#boxes {
+    color: #050505;
+    text-align: center;
+    background: #fff;
+}
+
+#boxes .box {
+    width: 30%;
+    height: 320px;
+    overflow: hidden;
+    padding: 10px;
+    float: left;
+    background: #fff;
+    margin: 10px 5px;
+    border-radius: 5px;
+    opacity: .8;
+    box-shadow: 2px 2px 5px #888;
+}
+
+#boxes .box:hover {
+    opacity: 1;
+}
+
+#boxes .box img {
+    width: 100px;
+}
+
+#boxes .box p {
+    text-align: justify;
+}
+
+footer {
+    background: #050505;
+}
+
+footer #footer-info {
+    text-align: center;
+    padding: 10px;
+}
