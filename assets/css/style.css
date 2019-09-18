@@ -115,15 +115,17 @@ header a:hover {
 
 header #search-box {
     background: #fff;
+    height: 40px;
     float: right;
-    margin-top: 10px;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    margin-top: 15px;
+    right: 0;
 }
 
 header #search-box input {
-    width: 0px;
+    width: 0;
     height: 30px;
     border: none;
     outline: none;
@@ -143,8 +145,9 @@ header #search-box button {
     top: 50%;
 }
 
-header #search-box button:hover> #search-text {
+header #search-box:hover #search-text {
     width: 240px;
+    transition: .2s;
 }
 
 /* Showcase */
